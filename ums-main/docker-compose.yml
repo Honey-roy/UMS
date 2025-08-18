@@ -4,5 +4,5 @@ services:
     build: .
     container_name: uni_app
     ports:
-      - "8000:8000"
+      - "8001:5000"
     restart: always
