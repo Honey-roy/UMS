@@ -1,0 +1,202 @@
+{% extends 'student_panel/dashboard.html' %}
+
+{% block style %}
+<style>
+    .input1 {
+        outline: none;
+        border: 1px solid grey;
+        padding: 2px;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+</style>
+{% endblock %}
+
+{% block placement_sidebar %}
+<li class="page-active">
+    {% endblock %}
+    {% block dashboard_sidebar %}
+<li>
+    {% endblock %}
+    {% block namebar %}
+    {% endblock %}
+    <!-- Page body -->
+    {% block body1 %}
+    <div class="container-fluid">
+        <div class="section-block mb-5"></div>
+        <div class="dashboard-heading mb-5">
+            <h3 class="fs-22 font-weight-semi-bold">Placement Offers</h3>
+        </div>
+        <div class="table-responsive mb-5">
+            <table class="table generic-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Placement ID</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">Salary</th>
+                        <th scope="col">DOJ</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">
+                            <ul class="generic-list-item">
+                                <li>#090909</li>
+                            </ul>
+                        </th>
+                        <td>
+                            <div class="media media-card align-items-center">
+                                <a href="#" class="media-img">
+                                    <img class="mr-3" src="../../static/assets/user_assets/images/small-img.jpg"
+                                        alt="Cart image">
+                                </a>
+                                <div class="media-body">
+                                    <h5 class="fs-15"><a href="#">SimpleCompany pvt ltd.</a></h5>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <ul class="generic-list-item">
+                                <li>Banglore</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="generic-list-item">
+                                <li>Rs 11 Lakh</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="generic-list-item">
+                                <li>April 11, 2021</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="generic-list-item">
+                                <li><span class="badge bg-success text-white p-1">Accepted</span></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <ul class="generic-list-item">
+                                <li>#050509</li>
+                            </ul>
+                        </th>
+                        <td>
+                            <div class="media media-card align-items-center">
+                                <a href="#" class="media-img">
+                                    <img class="mr-3" src="../../static/assets/user_assets/images/small-img.jpg"
+                                        alt="Cart image">
+                                </a>
+                                <div class="media-body">
+                                    <h5 class="fs-15"><a href="#">Symbiosis</a></h5>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <ul class="generic-list-item">
+                                <li>Gurugram</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="generic-list-item">
+                                <li>Rs 6 Lakh</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="generic-list-item">
+                                <li>July 12, 2019</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="generic-list-item">
+                                <li><span class="badge bg-info text-white p-1">On Hold</span></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <ul class="generic-list-item">
+                                <li>#140101</li>
+                            </ul>
+                        </th>
+                        <td>
+                            <div class="media media-card align-items-center">
+                                <a href="#" class="media-img">
+                                    <img class="mr-3" src="../../static/assets/user_assets/images/small-img.jpg"
+                                        alt="Cart image">
+                                </a>
+                                <div class="media-body">
+                                    <h5 class="fs-15"><a href="#">Manav traders pvt ltd.</a></h5>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <ul class="generic-list-item">
+                                <li>Hyderabad</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="generic-list-item">
+                                <li>Rs 12 lakh</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="generic-list-item">
+                                <li>December 20, 2017</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="generic-list-item">
+                                <li><span class="badge bg-danger text-white p-1">Cancelled</span></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <ul class="generic-list-item">
+                                <li>#12909</li>
+                            </ul>
+                        </th>
+                        <td>
+                            <div class="media media-card align-items-center">
+                                <a href="#" class="media-img">
+                                    <img class="mr-3" src="../../static/assets/user_assets/images/small-img.jpg"
+                                        alt="Cart image">
+                                </a>
+                                <div class="media-body">
+                                    <h5 class="fs-15"><a href="#">NoCorp Ltd.</a></h5>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <ul class="generic-list-item">
+                                <li>Mumbai</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="generic-list-item">
+                                <li>Rs 25 Lakh</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="generic-list-item">
+                                <li>May 22, 20196</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="generic-list-item">
+                                <li><span class="badge bg-danger text-white p-1">Cancelled</span></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </div><!-- end container-fluid -->
+    {% endblock %}
+    <!-- /Page Wrapper -->

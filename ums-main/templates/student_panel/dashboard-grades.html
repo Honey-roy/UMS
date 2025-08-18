@@ -1,0 +1,97 @@
+{% extends 'student_panel/dashboard.html' %}
+<!-- Page body -->
+{% block grades_sidebar %}
+<li class="page-active">
+    {% endblock %}
+    {% block dashboard_sidebar %}
+<li>
+    {% endblock %}
+    {% block namebar %}
+    {% endblock %}
+
+    {% block body1 %}
+
+    <div class="container-fluid">
+        <div class="section-block mb-5"></div>
+        <div class="dashboard-heading mb-5">
+            <h3 class="fs-22 font-weight-semi-bold">Graded Assignment</h3>
+        </div>
+        <div class="table-responsive pb-4">
+            <table class="table generic-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Course Title</th>
+                        <th scope="col">Questions</th>
+                        <th scope="col">Total Marks</th>
+                        <th scope="col">Earned Marks</th>
+                        <th scope="col">Pass Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for items in list %}
+                    <tr>
+                        <th scope="row">
+                            <ul class="generic-list-item">
+                                <li>
+                                    {% if items[5] > 30 %}
+                                    <span class="badge bg-success text-white p-1">Passed</span>
+                                    {% else %}
+                                    <span class="badge bg-danger text-white p-1">Fail</span>
+                                    {% endif %}
+                                    <span>{{items[6]}}</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-black">{{items[2]}}</a>
+                                </li>
+                            </ul>
+                        </th>
+                        <td>
+                            <ul class="generic-list-item">
+                                <li>1</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="generic-list-item">
+                                <li>{{items[4]}}</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="generic-list-item">
+                                <li>{{items[3]}}({{items[5] | float}}%)</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="generic-list-item">
+                                <li>{{(items[4] | float)*3/10}}(30%)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="text-center py-3">
+            <nav aria-label="Page navigation example" class="pagination-box">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true"><i class="la la-arrow-left"></i></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true"><i class="la la-arrow-right"></i></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="fs-14 pt-2">Showing 1-5 of 16 results</p>
+        </div>
+    </div><!-- end container-fluid -->
+    </div><!-- end dashboard-content-wrap -->
+    {% endblock %}
