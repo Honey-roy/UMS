@@ -9,8 +9,8 @@ The project consists of multiple subsystems -
 
 
 This project is developed by- <br>
-# Anoushka Aditi Acharya <br>
 # Honey <br>
+# Anoushka Aditi Acharya <br>
 # Smrutishree <br>
 <hr>
 
